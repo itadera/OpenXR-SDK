@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>OPENXR</name>
+  <version>0.0.0</version>
+  <description>OpenXR-SDK</description>
+
+  <maintainer email="tbd@tbd.tbd">OpenXR-SDK</maintainer>
+
+  <license>Apache2.0</license>
+
+  <url type="website">https://github.com/KhronosGroup/OpenXR-SDK</url>
+
+  <build_depend>git</build_depend>
+  <exec_depend condition="$ROS_VERSION == 1">catkin</exec_depend>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <build_depend>opengl</build_depend>
+  <build_depend>libvulkan-dev</build_depend>
+  <!-- <build_depend>libx11-xcb-dev</build_depend>
+  <build_depend>libxcb-dri2-0-dev</build_depend>
+  <build_depend>libxcb-glx0-dev</build_depend>
+  <build_depend>libxcb-icccm4-dev</build_depend>
+  <build_depend>libxcb-keysyms1-dev</build_depend>
+  <build_depend>libxcb-randr0-dev</build_depend> -->
+  <build_depend>libxrandr</build_depend> 
+  <build_depend>libxxf86vm</build_depend>
+  <build_depend>mesa-common-dev</build_depend>
+  
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
